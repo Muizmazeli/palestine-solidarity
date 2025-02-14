@@ -25,6 +25,9 @@ header {
     padding: 15px 30px;
     background-color: #000000;
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 header .logo img {
