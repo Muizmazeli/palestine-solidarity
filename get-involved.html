@@ -8,38 +8,27 @@
     <link rel="stylesheet" href="css/get-involved.css" />
     <script defer src="jsscript.js"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-          <header>
-        <a class="logo" href="index.html">
-            <img src="images/pslogo.png" alt="Palestine Solidarity Logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="get-involved.html">Get Involved</a></li>
-                <li><a href="history.html">History</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-
-            </ul>
-        </nav>
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">
+        <img src="images/pslogo.png" alt="Palestine Solidarity Logo" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="get-involved.html">Get Involved</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
     </header>
-    
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Get Involved</title>
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/get-involved.css" />
-    <script defer src="jsscript.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+
     <div class="content">
         <div class="get-involved-header">
             <h1><i class="fas fa-hands-helping"></i> Join Our Cause</h1>
@@ -99,22 +88,6 @@
             </div>
         </div>
 
-        <div class="donation-calculator">
-            <h2><i class="fas fa-calculator"></i> Impact Calculator</h2>
-            <div class="calculator">
-                <div class="calculator-item">
-                    <h3><i class="fas fa-medkit"></i> Medical Supplies</h3>
-                    <input type="number" id="medicalAmount" min="10" step="10" value="50">
-                    <p class="impact-text">This can provide basic medical supplies for <span id="medicalImpact">5</span> people</p>
-                </div>
-                <div class="calculator-item">
-                    <h3><i class="fas fa-utensils"></i> Food Aid</h3>
-                    <input type="number" id="foodAmount" min="10" step="10" value="50">
-                    <p class="impact-text">This can feed <span id="foodImpact">2</span> families for a week</p>
-                </div>
-            </div>
-        </div>
-
         <div class="upcoming-events">
             <h2><i class="fas fa-calendar-alt"></i> Upcoming Events</h2>
             <div class="events-timeline">
@@ -146,10 +119,129 @@
                 </div>
             </div>
         </div>
+
+   <div class="survey-container">
+        <form class="survey-form">
+            <h2>Palestine Solidarity & Human Rights Survey</h2>
+            <p>Your opinion matters. Join the movement for global justice.</p>
+
+            <!-- Personal Information Section -->
+            <section class="section">
+                <h3>Personal Information</h3>
+
+                <!-- Name -->
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email -->
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Age -->
+                <div class="input-group">
+                    <label for="age">Your Age</label>
+                    <input type="number" id="age" name="age" min="12" max="100" placeholder="Enter your age" required>
+                </div>
+            </section>
+
+            <!-- Nationality Section -->
+            <section class="section">
+                <h3>Nationality</h3>
+                <div class="input-group">
+                    <label for="nationality">Select Your Nationality</label>
+                    <select id="nationality" name="nationality" required>
+                        <option value="">-- Select --</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </section>
+
+            <!-- Support Palestine Section -->
+            <section class="section">
+                <h3>Support for Palestine</h3>
+                <div class="input-group">
+                    <label>Do you support the Palestine Solidarity movement?</label>
+                    <div class="radio-group">
+                        <input type="radio" id="yes" name="support" value="yes" required>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="support" value="no">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Human Rights Concerns -->
+            <section class="section">
+                <h3>Human Rights Concerns</h3>
+                <div class="input-group">
+                    <label>What human rights issues concern you the most? (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <div>
+                            <input type="checkbox" id="war" name="concern" value="war">
+                            <label for="war">War & Genocide</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="freedom" name="concern" value="freedom">
+                            <label for="freedom">Freedom of Speech</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="media" name="concern" value="media">
+                            <label for="media">Media Censorship</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="discrimination" name="concern" value="discrimination">
+                            <label for="discrimination">Discrimination & Racism</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Awareness Level Section -->
+            <section class="section">
+                <h3>Awareness Level</h3>
+                <div class="input-group">
+                    <label for="awareness">How aware are you of Palestine’s humanitarian crisis? (1-10)</label>
+                    <input type="range" id="awareness" name="awareness" min="1" max="10" step="1">
+                </div>
+            </section>
+
+            <!-- Feedback Section -->
+            <section class="section">
+                <h3>Your Feedback</h3>
+                <div class="input-group">
+                    <label for="feedback">Share your thoughts on Palestine solidarity:</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Write your opinion here..."></textarea>
+                </div>
+            </section>
+
+            <!-- Date Section -->
+            <section class="section">
+                <h3>Date of Participation</h3>
+                <div class="input-group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+            </section>
+
+            <!-- Submit Button -->
+            <section class="section">
+                <div class="input-group">
+                    <button type="submit">Submit Survey</button>
+                </div>
+            </section>
+        </form>
     </div>
-</body>
-</html>
-  <!-- FOOTER SECTION -->
+      
+    </div>
+    <!-- FOOTER SECTION -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -201,8 +293,9 @@
             <!-- Copyright & Social Media -->
             <div class="footer-bottom">
                 <p>© Copyright <strong>Palestine Solidarity</strong>. All Rights Reserved</p>
-                </div>
+            </div>
             </div>
         </div>
     </footer>
+</body>
 </html>
