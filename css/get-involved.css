@@ -627,7 +627,7 @@ body {
 
 .get-involved-header h1 {
   font-size: 2.5em;
-  color: #6fbf73;
+  color: #2a5a3d;
 }
 
 .get-involved-header p {
@@ -665,7 +665,7 @@ body {
 
 .opportunity-content h3 {
   font-size: 1.5em;
-  color: #6fbf73;
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -687,7 +687,7 @@ body {
 }
 
 .button:hover {
-  background-color: #6fbf73;
+  background-color: #2a5a3d;
 }
 
 .urgent-appeal {
@@ -696,7 +696,7 @@ body {
 
 .urgent-appeal h2 {
   font-size: 2em;
-  color: ##6fbf73;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -749,7 +749,7 @@ body {
 
 .donation-calculator h2 {
   font-size: 2em;
-  color: #28a745;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -792,7 +792,7 @@ body {
 
 .upcoming-events h2 {
   font-size: 2em;
-  color: #6fbf73;
+  color: black;
   margin-bottom: 20px;
 }
 
@@ -813,7 +813,7 @@ body {
 }
 
 .event-date {
-  background-color: #6fbf73;
+  background-color: #2a5a3d;
   color: #fff;
   padding: 10px 20px;
   border-radius: 4px;
@@ -827,7 +827,7 @@ body {
 
 .event-content h3 {
   font-size: 1.5em;
-  color: #6fbf73;
+  color: black;
   margin-bottom: 10px;
 }
 
@@ -840,7 +840,7 @@ body {
 .register-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #6fbf73;
+  background-color: #2a5a3d;
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
