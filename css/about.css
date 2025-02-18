@@ -1,4 +1,11 @@
-* {
+.about-text h1 {
+    font-size: 2.8rem;
+    color: #2a5a3d;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}* 
+
+{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
