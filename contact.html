@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestine Solidarity</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">
+            <img src="images/pslogo.png" alt="Palestine Solidarity Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="timeline-header">
+        <h1>Contact us</h1>
+        <p class="subtitle">Feel free to contact on how we can act together</p>
+    </div>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form id="contactForm" onsubmit="return handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required 
+                               pattern="[A-Za-z\s]{2,}" 
+                               title="Name should contain at least 2 letters">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" 
+                               pattern="[0-9]{10}" 
+                               title="Please enter a valid 10-digit phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="type">Type of Inquiry *</label>
+                        <select id="type" name="type" required>
+                            <option value="">Select an option</option>
+                            <option value="donation">Make a Donation</option>
+                            <option value="volunteer">Volunteer</option>
+                            <option value="aid">Request Aid</option>
+                            <option value="media">Media Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required 
+                                  minlength="10" 
+                                  title="Please enter at least 10 characters"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="emergency-contact">
+                    <h2>Emergency Contact</h2>
+                    <p><strong>24/7 Hotline:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Emergency Email:</strong> emergency@palestineaid.org</p>
+                </div>
+
+                <div class="office-locations">
+                    <h2>Our Offices</h2>
+                    <div class="location">
+                        <h3>Main Office</h3>
+                        <p>123 Solidarity Street</p>
+                        <p>City, State 12345</p>
+                    </div>
+                    <div class="location">
+                        <h3>Aid Distribution Center</h3>
+                        <p>456 Hope Avenue</p>
+                        <p>City, State 67890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="map-container">
+            <h2>Our Location</h2>
+            <div class="interactive-map">
+                <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.533874203044!2d101.496277314757!3d3.214153997678888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc57a5b5b0b0b1%3A0xddc7d069a6b67d1f!2sUniversiti%20Selangor%20(UNISEL)%20Bestari%20Jaya%20Campus!5e0!3m2!1sen!2smy!4v1718798995757!5m2!1sen!2smy" 
+                        width="600" 
+                        height="450" 
+                        style="border:0" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </main>
+    
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo & Contact -->
+                <div class="footer-column">
+                    <h3>Palestine Solidarity</h3>
+                    <p>UNISEL Kampus Bestari Jaya,Jalan Timur Tambahan, 45600 Batang Berjuntai, Selangor</p>
+                    <p><strong>Phone:</strong> 03-3280 5062</p>
+                    <p><strong>Email:</strong> info@palestine.org</p>
+                </div>
+
+                <!-- Useful Links -->
+                <div class="footer-column">
+                    <h4>Useful Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="get-involved.html">Get Involved</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div class="footer-column">
+                    <h4>Our Work</h4>
+                    <ul>
+                        <li><a href="#">Advocacy</a></li>
+                        <li><a href="#">Humanitarian Aid</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Legal Support</a></li>
+                        <li><a href="#">Protests & Events</a></li>
+                    </ul>
+                </div>
+
+                <!-- Additional Section -->
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Reports</a></li>
+                        <li><a href="#">Research Papers</a></li>
+                        <li><a href="#">Videos & Photos</a></li>
+                        <li><a href="#">Press Releases</a></li>
+                        <li><a href="#">Emergency Contacts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright & Social Media -->
+            <div class="footer-bottom">
+                <p>© Copyright <strong>Palestine Solidarity</strong>. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+   <script>
+        document.querySelector('.burger-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const submitBtn = form.querySelector('.submit-btn');
+            
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Sending...';
+            
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                submitBtn.textContent = 'Send Message';
+                
+                const successMsg = document.createElement('div');
+                successMsg.className = 'success-message animate__animated animate__fadeIn';
+                successMsg.textContent = 'Message sent successfully!';
+                form.appendChild(successMsg);
+                
+                form.reset();
+                
+                setTimeout(() => {
+                    successMsg.classList.add('animate__fadeOut');
+                    setTimeout(() => successMsg.remove(), 1000);
+                }, 3000);
+            }, 1500);
+
+            return false;
+        }
+    </script>
+</body>
+</html>
