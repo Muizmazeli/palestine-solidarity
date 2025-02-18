@@ -202,15 +202,17 @@ body {
 }
 
 /* Survey Container */
-.survey-container {
-  background: #ffffff;
-  width: 100%;
-  max-width: 600px;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  margin: 0 auto; /* Center the container */
+#survey-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white; /* or any background color */
+  z-index: 9999; /* Ensure it stays above other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .survey-form h2 {
